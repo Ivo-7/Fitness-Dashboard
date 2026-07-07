@@ -7,12 +7,13 @@ const nutritionWeek = [
     sessions: [
       {
         time: "Ganztags",
-        title: "Gutes Frühstück vor dem Wandern, Snacks mitnehmen",
-        type: "note",
+        title: "Gutes Frühstück vor dem Long Easy Run, Snacks mitnehmen",
+        type: "breakfast",
         duration: null,
         target: null,
         details: [
-          "Kein festes Rezept – je nach Verfügbarkeit vor Ort"
+          "Leicht verdauliches Frühstück, ca. 1-2h vor dem Lauf",
+          "Für unterwegs: Snacks für die 1h Long Easy Run einpacken"
         ]
       }
     ]
