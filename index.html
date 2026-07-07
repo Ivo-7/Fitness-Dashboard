@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ivo's Fitness Dashboard</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>Fitness Dashboard</h1>
+  <p class="subtitle">Trainingsplan · Ernährung · Recovery</p>
+</header>
+
+<nav class="tabs">
+  <button class="tab-btn active" data-tab="training">Trainingsplan</button>
+  <button class="tab-btn" data-tab="ernaehrung">Ernährung</button>
+  <button class="tab-btn" data-tab="recovery">Recovery</button>
+</nav>
+
+<main>
+
+  <!-- TRAININGSPLAN -->
+  <section id="training" class="tab-content active">
+
+    <div class="info-box">
+      <strong>FTP:</strong> 216 W &nbsp;·&nbsp; <strong>HRmax:</strong> 190 bpm
+      <div class="zones">
+        <span class="zone">Z1 &lt;119W / 97-113 bpm</span>
+        <span class="zone">Z2 120-163W / 114-132 bpm</span>
+        <span class="zone">Z3 164-195W / 133-155 bpm</span>
+        <span class="zone">Z4 196-228W / 156-173 bpm</span>
+        <span class="zone">Z5 229-260W / &gt;173 bpm</span>
+      </div>
+    </div>
+
+    <div class="day-card">
+      <h3>Montag</h3>
+      <ul>
+        <li data-key="mon-mobility">Mittag: Mobility 15min (Hüfte, Schulter, Thorax)</li>
+        <li data-key="mon-strength">Abend: Oberkörper Krafttraining 1-1.5h (Push/Pull wechselnd)</li>
+      </ul>
+    </div>
+
+    <div class="day-card">
+      <h3>Dienstag</h3>
+      <ul>
+        <li data-key="tue-legs">Morgen: Beinkraft Läufer-Fokus 30-60min (Bulgarian Split, Step-ups, Wadenheben)</li>
+        <li data-key="tue-zwift">Mittag: Zwift Z2 2h (120-163W, 114-132 bpm, Pettit oder freie Fahrt) · IsoCarb während, Ultra Recovery danach</li>
+      </ul>
+    </div>
+
+    <div class="day-card">
+      <h3>Mittwoch</h3>
+      <ul>
+        <li data-key="wed-core">Morgen: Core Workout 20-25min (Plank, Dead Bug, Bird Dog, Glute Bridge)</li>
+        <li data-key="wed-gorby">Mittag: Zwift The Gorby ~50min (5x5min @240W / 5min Pause @120W) · Ultra Recovery danach</li>
+      </ul>
+    </div>
+
+    <div class="day-card">
+      <h3>Donnerstag</h3>
+      <ul>
+        <li data-key="thu-run">Morgen: Laufen Run-Walk 3:1 ~33min (Z2, 114-132 bpm, Garmin-Workout geladen)</li>
+        <li data-key="thu-mobility">Abend: Mobility 15min (Beine, Hüftbeuger, Waden)</li>
+      </ul>
+    </div>
+
+    <div class="day-card">
+      <h3>Freitag</h3>
+      <ul>
+        <li data-key="fri-mobility">Morgen: Mobility 15min (Fokus Beine/Hüfte)</li>
+        <li data-key="fri-zwift">Mittag: Zwift Wout van Aert VO2max 57min (6x2min @259W / 2min Pause) · readiness-abhängig, bei tiefer HRV/Body Battery &lt;60 gegen Pettit (Z2) tauschen</li>
+      </ul>
+    </div>
+
+    <div class="day-card rest">
+      <h3>Samstag</h3>
+      <ul>
+        <li data-key="sat-rest">Ruhetag. Aktive Erholung, Spazieren.</li>
+      </ul>
+    </div>
+
+    <div class="day-card">
+      <h3>Sonntag</h3>
+      <ul>
+        <li data-key="sun-run">Laufen Long Easy Run 1h (114-132 bpm, flache Route)</li>
+      </ul>
+    </div>
+
+  </section>
+
+  <!-- ERNÄHRUNG -->
+  <section id="ernaehrung" class="tab-content">
+
+    <div class="day-card">
+      <h3>Montag</h3>
+      <p><strong>Frühstück:</strong> 2 Toast + 150g Magerquark + Banane</p>
+      <p><strong>Mittag:</strong> 3 hart gekochte Eier + 2 Scheiben Brot + Frischkäse + Gurke/Tomaten</p>
+      <p><strong>Vor Gym:</strong> Banane/Joghurt</p>
+      <p><strong>Abend:</strong> Frau kocht</p>
+    </div>
+
+    <div class="day-card">
+      <h3>Dienstag</h3>
+      <p><strong>Frühstück:</strong> 80g Overnight Oats + Banane + Honig</p>
+      <p><strong>Während Ride:</strong> IsoCarb &nbsp;·&nbsp; <strong>Danach:</strong> Ultra Recovery</p>
+      <p><strong>Mittag:</strong> 150g Reis + 1 Dose Thunfisch + 100g Kichererbsen + Olivenöl + Zitrone</p>
+      <p><strong>Abend:</strong> Frau kocht (mehr KH)</p>
+    </div>
+
+    <div class="day-card">
+      <h3>Mittwoch</h3>
+      <p><strong>Frühstück:</strong> 2 Eier Rührei + 2 Toast + Joghurt</p>
+      <p><strong>Mittag (2-3h vor Gorby):</strong> Brot + Quark + Frucht</p>
+      <p><strong>Nach Gorby:</strong> Ultra Recovery</p>
+      <p><strong>Abend:</strong> Frau kocht (proteinreich)</p>
+    </div>
+
+    <div class="day-card">
+      <h3>Donnerstag</h3>
+      <p><strong>Vor Lauf:</strong> Banane &nbsp;·&nbsp; <strong>Nach Lauf:</strong> Joghurt + Müsliriegel</p>
+      <p><strong>Mittag:</strong> vor Ort Reis + Poulet + Gemüse</p>
+      <p><strong>Abend:</strong> Frau kocht</p>
+    </div>
+
+    <div class="day-card">
+      <h3>Freitag</h3>
+      <p>Alle Mahlzeiten gemeinsam mit Frau. Abend etwas weniger KH (Ruhetag).</p>
+    </div>
+
+    <div class="day-card">
+      <h3>Samstag</h3>
+      <p>Gemeinsam, weniger KH, Gemüse-Fokus (Ruhetag).</p>
+    </div>
+
+    <div class="day-card">
+      <h3>Sonntag</h3>
+      <p>Gutes Frühstück vor dem Wandern, Snacks mitnehmen.</p>
+    </div>
+
+    <div class="day-card shopping">
+      <h3>Einkaufsliste (montags)</h3>
+      <ul class="shopping-list">
+        <li data-key="shop-1">Thunfisch-Dosen 2x</li>
+        <li data-key="shop-2">Eier 12x</li>
+        <li data-key="shop-3">Magerquark 500g</li>
+        <li data-key="shop-4">Joghurt natur 4x200g</li>
+        <li data-key="shop-5">Frischkäse 1x</li>
+        <li data-key="shop-6">Haferflocken 500g</li>
+        <li data-key="shop-7">Reis 1kg</li>
+        <li data-key="shop-8">Toastbrot</li>
+        <li data-key="shop-9">Bananen 6-8x</li>
+        <li data-key="shop-10">Müsliriegel 4-5x</li>
+        <li data-key="shop-11">Kichererbsen-Dosen 1-2x</li>
+        <li data-key="shop-12">Gurken</li>
+        <li data-key="shop-13">Cherrytomaten</li>
+        <li data-key="shop-14">Tiefkühlgemüse 1kg</li>
+        <li data-key="shop-15">Äpfel/Beeren</li>
+        <li data-key="shop-16">Zitronen 2x</li>
+        <li data-key="shop-17">Olivenöl</li>
+        <li data-key="shop-18">Honig</li>
+      </ul>
+    </div>
+
+  </section>
+
+  <!-- RECOVERY -->
+  <section id="recovery" class="tab-content">
+
+    <div class="day-card">
+      <h3>Mobility-Rhythmus</h3>
+      <ul>
+        <li>Montag Mittag: Hüfte, Schulter, Thorax (15min)</li>
+        <li>Mittwoch Morgen: Core statt Mobility (20-25min)</li>
+        <li>Donnerstag Abend: Beine, Hüftbeuger, Waden nach dem Lauf (15min)</li>
+        <li>Freitag Morgen: Fokus Beine/Hüfte (15min)</li>
+      </ul>
+    </div>
+
+    <div class="day-card">
+      <h3>Supplements</h3>
+      <p><strong>Energy IsoCarb:</strong> während Sessions ≥75-90min (v.a. Dienstag 2h Ride)</p>
+      <p><strong>Energy Ultra Recovery:</strong> 0-30min nach intensiven/langen Sessions</p>
+    </div>
+
+    <div class="day-card">
+      <h3>Morgenroutine (frühe Sessions)</h3>
+      <ul>
+        <li>Direkt nach dem Aufwachen hydrieren</li>
+        <li>20-30min warten</li>
+        <li>Leichte Mobilisation</li>
+        <li>Kleiner Kohlenhydrat-Snack vor der Aktivität</li>
+      </ul>
+    </div>
+
+    <div class="day-card">
+      <h3>Garmin-Werte (manuell eintragen)</h3>
+      <div class="metrics-grid">
+        <div class="metric"><label>HRV</label><input type="text" data-key="hrv" placeholder="ms"></div>
+        <div class="metric"><label>Body Battery</label><input type="text" data-key="bb" placeholder="0-100"></div>
+        <div class="metric"><label>Schlaf-Score</label><input type="text" data-key="sleep" placeholder="0-100"></div>
+        <div class="metric"><label>ACWR</label><input type="text" data-key="acwr" placeholder="Ratio"></div>
+      </div>
+      <p class="hint">Bei tiefer HRV/Body Battery &lt;60: intensive Sessions gegen Z2 tauschen.</p>
+    </div>
+
+    <div class="day-card rest">
+      <h3>Samstag</h3>
+      <p>Ruhetag. Aktive Erholung, Spazieren.</p>
+    </div>
+
+  </section>
+
+</main>
+
+<footer>
+  <p>Zuletzt aktualisiert von Claude</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
