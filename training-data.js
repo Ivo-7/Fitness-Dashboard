@@ -160,10 +160,8 @@ const trainingWeek = [
         title: "Mobility",
         type: "mobility",
         duration: "15 min",
-        target: null,
-        details: [
-          "Fokus: Beine, Hüftbeuger, Waden (nach dem Lauf)"
-        ]
+        target: "Ganzkörper",
+        details: []
       }
     ]
   },
@@ -176,10 +174,8 @@ const trainingWeek = [
         title: "Mobility",
         type: "mobility",
         duration: "15 min",
-        target: null,
-        details: [
-          "Fokus: Beine, Hüfte"
-        ]
+        target: "Ganzkörper",
+        details: []
       },
       {
         time: "Mittag",
