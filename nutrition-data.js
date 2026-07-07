@@ -6,14 +6,27 @@ const nutritionWeek = [
     name: "Sonntag",
     sessions: [
       {
-        time: "Ganztags",
-        title: "Gutes Frühstück vor dem Long Easy Run, Snacks mitnehmen",
+        time: "Vor dem Lauf (ca. 1-2h vorher)",
+        title: "Kohlenhydratreiches, fettarmes Frühstück",
         type: "breakfast",
         duration: null,
-        target: null,
+        target: "Fokus: viel KH · wenig Fett & Ballaststoffe · moderat Eiweiss",
         details: [
-          "Leicht verdauliches Frühstück, ca. 1-2h vor dem Lauf",
-          "Für unterwegs: Snacks für die 1h Long Easy Run einpacken"
+          "Beispiel: 2 Toast mit Honig + Banane (ca. 300 kcal, 70g KH, 5g Eiweiss, 2g Fett)",
+          "Grössere Mengen Fett, Ballaststoffe oder Eiweiss vor dem Lauf vermeiden – belastet den Magen",
+          "Bei Nervosität im Magen: kleinere Menge, dafür früher essen"
+        ]
+      },
+      {
+        time: "Unterwegs (bei Bedarf)",
+        title: "Schnelle Kohlenhydrate",
+        type: "snack",
+        duration: null,
+        target: "Fokus: nur schnelle KH, kein Fett/Eiweiss nötig",
+        details: [
+          "Bei 1h Easy Run in normalen Bedingungen meist nicht zwingend nötig",
+          "Bei Hitze oder wenn der Lauf länger dauert: Banane, Traubenzucker oder Gel alle 20-30 Min",
+          "Reines Wasser reicht für 1h in der Regel aus"
         ]
       }
     ]
