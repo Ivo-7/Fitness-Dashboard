@@ -27,19 +27,25 @@ const trainingWeek = [
         title: "Mobility",
         type: "mobility",
         duration: "15 min",
-        target: null,
-        details: [
-          "Fokus: Hüfte, Schulter, Thorax"
-        ]
+        target: "Ganzkörper",
+        details: []
       },
       {
         time: "Abend",
         title: "Oberkörper Krafttraining",
         type: "strength",
         duration: "60-90 min",
-        target: "Push oder Pull (wöchentlich wechselnd)",
+        target: null,
         details: [
-          "Genaue Übungen noch zu ergänzen"
+          "Schrägbankdrücken mit Kurzhanteln – 3x6, 40 kg Hanteln",
+          "Schulterdrücken sitzend – 3x6, 25 kg Kurzhanteln",
+          "Latziehen – 3x8, 80 kg",
+          "Rudern mit V-Griff – 3x8, 80 kg",
+          "Seitheben mit Kurzhanteln – 3x8, 12.5 kg Hanteln",
+          "Bizeps Isolated Curl – 3x6, 15 kg Hanteln",
+          "Bizeps Rotationscurl – 3x6, 15 kg Hanteln",
+          "Hammer Curls – 3x6, 15 kg Hanteln",
+          "Trizepsdrücken am Seil – 3x8, 55 kg"
         ]
       }
     ]
@@ -55,9 +61,11 @@ const trainingWeek = [
         duration: "30-60 min",
         target: null,
         details: [
-          "Bulgarian Split Squats",
-          "Step-ups",
-          "Wadenheben"
+          "Kreuzheben einbeinig – 3x10",
+          "Split Squats – 3x10",
+          "Step-ups – 3x10",
+          "Wadenheben – 3x10",
+          "Wadenheben exzentrisch – 3x10"
         ]
       },
       {
@@ -83,12 +91,38 @@ const trainingWeek = [
         title: "Core Workout",
         type: "mobility",
         duration: "20-25 min",
-        target: null,
+        target: "je 30 Sek Übung, 10 Sek Pause",
         details: [
-          "Plank",
-          "Dead Bug",
-          "Bird Dog",
-          "Glute Bridge"
+          "Full body folds",
+          "Lying leg raise",
+          "Heel taps",
+          "Reverse crunch",
+          "Scissor raises",
+          "Oblique crunch rechts",
+          "Oblique crunch links",
+          "Shoulder taps",
+          "Plank up downs",
+          "Static plank",
+          "Side plank ups rechts",
+          "Side plank ups links",
+          "Static side plank rechts",
+          "Static side plank links",
+          "Full side crunch rechts",
+          "Full side crunch links",
+          "Explosive sit-up",
+          "Knee slides",
+          "Russian twists",
+          "Controlled crunch",
+          "Leg raise overhead",
+          "V sit crunch",
+          "Plank rotations",
+          "Plank knee ins",
+          "Serratus plank ups",
+          "Flutter kicks",
+          "Extended press ups",
+          "Lower ab static hold",
+          "L sit cross punch",
+          "Mountain climbers"
         ]
       },
       {
