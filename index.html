@@ -23,7 +23,6 @@
 
   <!-- TRAININGSPLAN -->
   <section id="training" class="tab-content active">
-
     <div class="info-box">
       <strong>FTP:</strong> 216 W &nbsp;·&nbsp; <strong>HRmax:</strong> 190 bpm
       <div class="zones">
@@ -35,60 +34,9 @@
       </div>
     </div>
 
-    <div class="day-card">
-      <h3>Montag</h3>
-      <ul>
-        <li data-key="mon-mobility">Mittag: Mobility 15min (Hüfte, Schulter, Thorax)</li>
-        <li data-key="mon-strength">Abend: Oberkörper Krafttraining 1-1.5h (Push/Pull wechselnd)</li>
-      </ul>
-    </div>
-
-    <div class="day-card">
-      <h3>Dienstag</h3>
-      <ul>
-        <li data-key="tue-legs">Morgen: Beinkraft Läufer-Fokus 30-60min (Bulgarian Split, Step-ups, Wadenheben)</li>
-        <li data-key="tue-zwift">Mittag: Zwift Z2 2h (120-163W, 114-132 bpm, Pettit oder freie Fahrt) · IsoCarb während, Ultra Recovery danach</li>
-      </ul>
-    </div>
-
-    <div class="day-card">
-      <h3>Mittwoch</h3>
-      <ul>
-        <li data-key="wed-core">Morgen: Core Workout 20-25min (Plank, Dead Bug, Bird Dog, Glute Bridge)</li>
-        <li data-key="wed-gorby">Mittag: Zwift The Gorby ~50min (5x5min @240W / 5min Pause @120W) · Ultra Recovery danach</li>
-      </ul>
-    </div>
-
-    <div class="day-card">
-      <h3>Donnerstag</h3>
-      <ul>
-        <li data-key="thu-run">Morgen: Laufen Run-Walk 3:1 ~33min (Z2, 114-132 bpm, Garmin-Workout geladen)</li>
-        <li data-key="thu-mobility">Abend: Mobility 15min (Beine, Hüftbeuger, Waden)</li>
-      </ul>
-    </div>
-
-    <div class="day-card">
-      <h3>Freitag</h3>
-      <ul>
-        <li data-key="fri-mobility">Morgen: Mobility 15min (Fokus Beine/Hüfte)</li>
-        <li data-key="fri-zwift">Mittag: Zwift Wout van Aert VO2max 57min (6x2min @259W / 2min Pause) · readiness-abhängig, bei tiefer HRV/Body Battery &lt;60 gegen Pettit (Z2) tauschen</li>
-      </ul>
-    </div>
-
-    <div class="day-card rest">
-      <h3>Samstag</h3>
-      <ul>
-        <li data-key="sat-rest">Ruhetag. Aktive Erholung, Spazieren.</li>
-      </ul>
-    </div>
-
-    <div class="day-card">
-      <h3>Sonntag</h3>
-      <ul>
-        <li data-key="sun-run">Laufen Long Easy Run 1h (114-132 bpm, flache Route)</li>
-      </ul>
-    </div>
-
+    <div id="today-hero"></div>
+    <div class="day-strip" id="day-strip"></div>
+    <div id="week-list"></div>
   </section>
 
   <!-- ERNÄHRUNG -->
@@ -219,6 +167,8 @@
   <p>Zuletzt aktualisiert von Claude</p>
 </footer>
 
+<script src="icons.js"></script>
+<script src="training-data.js"></script>
 <script src="script.js"></script>
 </body>
 </html>
