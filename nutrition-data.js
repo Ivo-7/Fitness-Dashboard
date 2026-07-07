@@ -1,4 +1,5 @@
 // Ernährungsdaten – gleiche Struktur wie training-data.js
+// "target" wird für die geschätzten Nährwerte verwendet, "details" für die Zubereitung.
 const nutritionWeek = [
   { // Sonntag
     weekday: 0,
@@ -10,7 +11,9 @@ const nutritionWeek = [
         type: "note",
         duration: null,
         target: null,
-        details: []
+        details: [
+          "Kein festes Rezept – je nach Verfügbarkeit vor Ort"
+        ]
       }
     ]
   },
@@ -23,24 +26,34 @@ const nutritionWeek = [
         title: "2 Toast + 150g Magerquark + Banane",
         type: "breakfast",
         duration: null,
-        target: null,
-        details: []
+        target: "ca. 340 kcal · 24g Eiweiss · 57g KH · 2g Fett",
+        details: [
+          "Toast toasten",
+          "Magerquark daraufstreichen oder separat servieren",
+          "Banane in Scheiben dazu"
+        ]
       },
       {
         time: "Mittag",
         title: "3 hart gekochte Eier + 2 Scheiben Brot + Frischkäse + Gurke/Tomaten",
         type: "lunch",
         duration: null,
-        target: null,
-        details: []
+        target: "ca. 450 kcal · 28g Eiweiss · 32g KH · 22g Fett",
+        details: [
+          "Eier 8-10 Min hart kochen, abschrecken, schälen",
+          "Brot mit Frischkäse bestreichen",
+          "Gurke und Tomaten in Scheiben dazu"
+        ]
       },
       {
         time: "Vor Gym",
         title: "Banane oder Joghurt",
         type: "snack",
         duration: null,
-        target: null,
-        details: []
+        target: "Banane ca. 105 kcal · Joghurt ca. 90 kcal",
+        details: [
+          "Ca. 30-45 Min vor dem Training, leicht verdaulich"
+        ]
       },
       {
         time: "Abend",
@@ -48,7 +61,9 @@ const nutritionWeek = [
         type: "note",
         duration: null,
         target: null,
-        details: []
+        details: [
+          "Kein festes Rezept – Partnerin kocht"
+        ]
       }
     ]
   },
@@ -61,8 +76,12 @@ const nutritionWeek = [
         title: "80g Overnight Oats + Banane + Honig",
         type: "breakfast",
         duration: null,
-        target: null,
-        details: []
+        target: "ca. 465 kcal · 11g Eiweiss · 92g KH · 6g Fett",
+        details: [
+          "Haferflocken mit Milch oder Pflanzendrink übergiessen",
+          "Über Nacht im Kühlschrank quellen lassen",
+          "Morgens mit Banane und Honig toppen"
+        ]
       },
       {
         time: "Während Ride",
@@ -70,7 +89,10 @@ const nutritionWeek = [
         type: "supplement",
         duration: null,
         target: null,
-        details: []
+        details: [
+          "Menge nach Herstellerangabe (Prozis Energy IsoCarb)",
+          "In Trinkflasche mit Wasser auflösen"
+        ]
       },
       {
         time: "Danach",
@@ -78,15 +100,22 @@ const nutritionWeek = [
         type: "supplement",
         duration: null,
         target: null,
-        details: []
+        details: [
+          "Menge nach Herstellerangabe",
+          "Im 0-30 Min Fenster nach dem Training"
+        ]
       },
       {
         time: "Mittag",
         title: "150g Reis + 1 Dose Thunfisch + 100g Kichererbsen + Olivenöl + Zitrone",
         type: "lunch",
         duration: null,
-        target: null,
-        details: []
+        target: "ca. 590 kcal · 44g Eiweiss · 69g KH · 14g Fett",
+        details: [
+          "Reis nach Packungsanweisung kochen",
+          "Thunfisch abtropfen lassen, mit Kichererbsen mischen",
+          "Mit Olivenöl und Zitronensaft abschmecken"
+        ]
       },
       {
         time: "Abend",
@@ -94,7 +123,9 @@ const nutritionWeek = [
         type: "note",
         duration: null,
         target: null,
-        details: []
+        details: [
+          "Kein festes Rezept – Partnerin kocht, Fokus auf mehr Kohlenhydrate"
+        ]
       }
     ]
   },
@@ -107,16 +138,22 @@ const nutritionWeek = [
         title: "2 Eier Rührei + 2 Toast + Joghurt",
         type: "breakfast",
         duration: null,
-        target: null,
-        details: []
+        target: "ca. 420 kcal · 23g Eiweiss · 33g KH · 22g Fett",
+        details: [
+          "Eier verquirlen, in wenig Butter oder Öl stocken lassen",
+          "Mit Toast und Joghurt servieren"
+        ]
       },
       {
         time: "Mittag (2-3h vor Gorby)",
         title: "Brot + Quark + Frucht",
         type: "lunch",
         duration: null,
-        target: null,
-        details: []
+        target: "ca. 330 kcal · 24g Eiweiss · 52g KH · 2g Fett",
+        details: [
+          "Brot mit Magerquark bestreichen",
+          "Frucht nach Wahl als Beilage"
+        ]
       },
       {
         time: "Nach Gorby",
@@ -124,7 +161,10 @@ const nutritionWeek = [
         type: "supplement",
         duration: null,
         target: null,
-        details: []
+        details: [
+          "Menge nach Herstellerangabe",
+          "Im 0-30 Min Fenster nach dem Training"
+        ]
       },
       {
         time: "Abend",
@@ -132,7 +172,9 @@ const nutritionWeek = [
         type: "note",
         duration: null,
         target: null,
-        details: []
+        details: [
+          "Kein festes Rezept – Partnerin kocht, Fokus auf Eiweiss"
+        ]
       }
     ]
   },
@@ -145,24 +187,31 @@ const nutritionWeek = [
         title: "Banane",
         type: "snack",
         duration: null,
-        target: null,
-        details: []
+        target: "ca. 105 kcal · 27g KH",
+        details: [
+          "Direkt vor dem Lauf, leicht verdaulich"
+        ]
       },
       {
         time: "Nach Lauf",
         title: "Joghurt + Müsliriegel",
         type: "snack",
         duration: null,
-        target: null,
-        details: []
+        target: "ca. 210 kcal · 7g Eiweiss · 25g KH · 9g Fett",
+        details: [
+          "Direkt nach dem Lauf verzehren, kein Kochen nötig"
+        ]
       },
       {
         time: "Mittag",
         title: "Vor Ort: Reis + Poulet + Gemüse",
         type: "lunch",
         duration: null,
-        target: null,
-        details: []
+        target: "ca. 480 kcal · 53g Eiweiss · 50g KH · 6g Fett",
+        details: [
+          "Wird auswärts zubereitet (Kantine/Restaurant)",
+          "Ausgewogenes Verhältnis Reis, Poulet, Gemüse wählen"
+        ]
       },
       {
         time: "Abend",
@@ -170,7 +219,9 @@ const nutritionWeek = [
         type: "note",
         duration: null,
         target: null,
-        details: []
+        details: [
+          "Kein festes Rezept – Partnerin kocht"
+        ]
       }
     ]
   },
