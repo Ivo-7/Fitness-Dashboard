@@ -36,7 +36,7 @@ function renderToday(weekData, heroId) {
   hero.innerHTML = `
     <div class="today-label">Heute &middot; ${dayData.name}</div>
     <div class="today-sessions">
-      ${dayData.sessions.map(s => sessionCard(s, true)).join('')}
+      ${dayData.sessions.map(s => sessionCard(s, false)).join('')}
     </div>
   `;
 }
