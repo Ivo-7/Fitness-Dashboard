@@ -215,5 +215,10 @@ const typeConfig = {
   bike:     { label: "Rad",   color: "teal" },
   run:      { label: "Lauf",  color: "blue" },
   mobility: { label: "Mobility", color: "purple" },
-  rest:     { label: "Ruhetag", color: "gray" }
+  rest:     { label: "Ruhetag", color: "gray" },
+  breakfast:  { label: "Frühstück", color: "amber" },
+  lunch:      { label: "Mittag", color: "green" },
+  snack:      { label: "Snack", color: "purple" },
+  supplement: { label: "Supplement", color: "coral" },
+  note:       { label: "Hinweis", color: "gray" }
 };

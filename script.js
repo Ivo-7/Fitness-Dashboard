@@ -1,11 +1,11 @@
-// ---- Trainingsplan rendern ----
+// ---- Generische Wochenplan-Rendering-Funktionen (Training + Ernährung) ----
 
 const today = new Date().getDay(); // 0=So ... 6=Sa
 const dayNamesShort = ["So", "Mo", "Di", "Mi", "Do", "Fr", "Sa"];
 
 function sessionCard(session, expanded) {
   const cfg = typeConfig[session.type];
-  const key = session.title.replace(/\s+/g, '-').toLowerCase();
+  const key = session.time.replace(/\s+/g, '-').toLowerCase() + '-' + session.title.slice(0, 20).replace(/\s+/g, '-').toLowerCase();
   const isOpen = localStorage.getItem('open-' + key) === 'true' || expanded;
   return `
     <div class="session c-${cfg.color} ${isOpen ? 'open' : ''}" data-session-key="${key}">
@@ -22,17 +22,16 @@ function sessionCard(session, expanded) {
           ${session.duration ? `<span class="meta-item">${icons.clock}${session.duration}</span>` : ''}
           ${session.target ? `<span class="meta-item">${icons.target}${session.target}</span>` : ''}
         </div>
-        <ul class="session-details">
-          ${session.details.map(d => `<li>${d}</li>`).join('')}
-        </ul>
+        ${session.details.length ? `<ul class="session-details">${session.details.map(d => `<li>${d}</li>`).join('')}</ul>` : ''}
       </div>
     </div>
   `;
 }
 
-function renderToday() {
-  const dayData = trainingWeek.find(d => d.weekday === today);
-  const hero = document.getElementById('today-hero');
+function renderToday(weekData, heroId) {
+  const dayData = weekData.find(d => d.weekday === today);
+  const hero = document.getElementById(heroId);
+  if (!hero) return;
   if (!dayData) { hero.innerHTML = ''; return; }
   hero.innerHTML = `
     <div class="today-label">Heute &middot; ${dayData.name}</div>
@@ -42,10 +41,11 @@ function renderToday() {
   `;
 }
 
-function renderWeekStrip() {
-  const strip = document.getElementById('day-strip');
-  strip.innerHTML = trainingWeek.map(d => `
-    <button class="strip-day ${d.weekday === today ? 'active' : ''}" data-jump="day-${d.weekday}">
+function renderWeekStrip(weekData, stripId) {
+  const strip = document.getElementById(stripId);
+  if (!strip) return;
+  strip.innerHTML = weekData.map(d => `
+    <button class="strip-day ${d.weekday === today ? 'active' : ''}" data-jump="${stripId}-day-${d.weekday}">
       ${dayNamesShort[d.weekday]}
     </button>
   `).join('');
@@ -56,15 +56,16 @@ function renderWeekStrip() {
   });
 }
 
-function renderWeekList() {
-  const list = document.getElementById('week-list');
-  const ordered = [...trainingWeek].sort((a, b) => {
+function renderWeekList(weekData, listId, stripId) {
+  const list = document.getElementById(listId);
+  if (!list) return;
+  const ordered = [...weekData].sort((a, b) => {
     const da = (a.weekday - 1 + 7) % 7;
     const db = (b.weekday - 1 + 7) % 7;
     return da - db;
   });
   list.innerHTML = ordered.map(d => `
-    <div class="week-day-card ${d.weekday === today ? 'is-today' : ''}" id="day-${d.weekday}">
+    <div class="week-day-card ${d.weekday === today ? 'is-today' : ''}" id="${stripId}-day-${d.weekday}">
       <h3>${d.name}</h3>
       ${d.sessions.map(s => sessionCard(s, false)).join('')}
     </div>
@@ -81,11 +82,22 @@ function attachSessionToggles() {
   });
 }
 
-if (document.getElementById('today-hero')) {
-  renderToday();
-  renderWeekStrip();
-  renderWeekList();
-  attachSessionToggles();
+function renderWeekBlock(weekData, prefix) {
+  renderToday(weekData, prefix + '-today-hero');
+  renderWeekStrip(weekData, prefix + '-day-strip');
+  renderWeekList(weekData, prefix + '-week-list', prefix);
+}
+
+renderWeekBlock(trainingWeek, 'training');
+renderWeekBlock(nutritionWeek, 'nutrition');
+attachSessionToggles();
+
+// Einkaufsliste rendern
+const shoppingListEl = document.getElementById('shopping-list');
+if (shoppingListEl) {
+  shoppingListEl.innerHTML = shoppingList.map((item, i) => `
+    <li data-key="shop-${i}">${item}</li>
+  `).join('');
 }
 
 // Tab-Wechsel

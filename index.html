@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Ivo's Fitness Dashboard</title>
-<link rel="stylesheet" href="style.css?v=1783432835">
+<link rel="stylesheet" href="style.css?v=1783433112">
 </head>
 <body>
 
@@ -64,84 +64,21 @@
       </div>
     </div>
 
-    <div id="today-hero"></div>
-    <div class="day-strip" id="day-strip"></div>
-    <div id="week-list"></div>
+    <div id="training-today-hero"></div>
+    <div class="day-strip" id="training-day-strip"></div>
+    <div id="training-week-list"></div>
   </section>
 
   <!-- ERNÄHRUNG -->
   <section id="ernaehrung" class="tab-content">
-
-    <div class="day-card">
-      <h3>Montag</h3>
-      <p><strong>Frühstück:</strong> 2 Toast + 150g Magerquark + Banane</p>
-      <p><strong>Mittag:</strong> 3 hart gekochte Eier + 2 Scheiben Brot + Frischkäse + Gurke/Tomaten</p>
-      <p><strong>Vor Gym:</strong> Banane/Joghurt</p>
-      <p><strong>Abend:</strong> Frau kocht</p>
-    </div>
-
-    <div class="day-card">
-      <h3>Dienstag</h3>
-      <p><strong>Frühstück:</strong> 80g Overnight Oats + Banane + Honig</p>
-      <p><strong>Während Ride:</strong> IsoCarb &nbsp;·&nbsp; <strong>Danach:</strong> Ultra Recovery</p>
-      <p><strong>Mittag:</strong> 150g Reis + 1 Dose Thunfisch + 100g Kichererbsen + Olivenöl + Zitrone</p>
-      <p><strong>Abend:</strong> Frau kocht (mehr KH)</p>
-    </div>
-
-    <div class="day-card">
-      <h3>Mittwoch</h3>
-      <p><strong>Frühstück:</strong> 2 Eier Rührei + 2 Toast + Joghurt</p>
-      <p><strong>Mittag (2-3h vor Gorby):</strong> Brot + Quark + Frucht</p>
-      <p><strong>Nach Gorby:</strong> Ultra Recovery</p>
-      <p><strong>Abend:</strong> Frau kocht (proteinreich)</p>
-    </div>
-
-    <div class="day-card">
-      <h3>Donnerstag</h3>
-      <p><strong>Vor Lauf:</strong> Banane &nbsp;·&nbsp; <strong>Nach Lauf:</strong> Joghurt + Müsliriegel</p>
-      <p><strong>Mittag:</strong> vor Ort Reis + Poulet + Gemüse</p>
-      <p><strong>Abend:</strong> Frau kocht</p>
-    </div>
-
-    <div class="day-card">
-      <h3>Freitag</h3>
-      <p>Alle Mahlzeiten gemeinsam mit Frau. Abend etwas weniger KH (Ruhetag).</p>
-    </div>
-
-    <div class="day-card">
-      <h3>Samstag</h3>
-      <p>Gemeinsam, weniger KH, Gemüse-Fokus (Ruhetag).</p>
-    </div>
-
-    <div class="day-card">
-      <h3>Sonntag</h3>
-      <p>Gutes Frühstück vor dem Wandern, Snacks mitnehmen.</p>
-    </div>
+    <div id="nutrition-today-hero"></div>
+    <div class="day-strip" id="nutrition-day-strip"></div>
+    <div id="nutrition-week-list"></div>
 
     <div class="day-card shopping">
       <h3>Einkaufsliste (montags)</h3>
-      <ul class="shopping-list">
-        <li data-key="shop-1">Thunfisch-Dosen 2x</li>
-        <li data-key="shop-2">Eier 12x</li>
-        <li data-key="shop-3">Magerquark 500g</li>
-        <li data-key="shop-4">Joghurt natur 4x200g</li>
-        <li data-key="shop-5">Frischkäse 1x</li>
-        <li data-key="shop-6">Haferflocken 500g</li>
-        <li data-key="shop-7">Reis 1kg</li>
-        <li data-key="shop-8">Toastbrot</li>
-        <li data-key="shop-9">Bananen 6-8x</li>
-        <li data-key="shop-10">Müsliriegel 4-5x</li>
-        <li data-key="shop-11">Kichererbsen-Dosen 1-2x</li>
-        <li data-key="shop-12">Gurken</li>
-        <li data-key="shop-13">Cherrytomaten</li>
-        <li data-key="shop-14">Tiefkühlgemüse 1kg</li>
-        <li data-key="shop-15">Äpfel/Beeren</li>
-        <li data-key="shop-16">Zitronen 2x</li>
-        <li data-key="shop-17">Olivenöl</li>
-        <li data-key="shop-18">Honig</li>
-      </ul>
+      <ul class="shopping-list" id="shopping-list"></ul>
     </div>
-
   </section>
 
   <!-- RECOVERY -->
@@ -197,8 +134,9 @@
   <p>Zuletzt aktualisiert von Claude</p>
 </footer>
 
-<script src="icons.js?v=1783432835"></script>
-<script src="training-data.js?v=1783432835"></script>
-<script src="script.js?v=1783432835"></script>
+<script src="icons.js?v=1783433112"></script>
+<script src="training-data.js?v=1783433112"></script>
+<script src="nutrition-data.js?v=1783433112"></script>
+<script src="script.js?v=1783433112"></script>
 </body>
 </html>
