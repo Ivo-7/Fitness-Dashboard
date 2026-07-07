@@ -57,12 +57,12 @@ const nutritionWeek = [
       },
       {
         time: "Abend",
-        title: "Frau kocht",
+        title: "Familienessen",
         type: "note",
         duration: null,
         target: null,
         details: [
-          "Kein festes Rezept – Partnerin kocht"
+          "Kein festes Rezept hinterlegt"
         ]
       }
     ]
@@ -119,12 +119,12 @@ const nutritionWeek = [
       },
       {
         time: "Abend",
-        title: "Frau kocht (mehr KH)",
+        title: "Familienessen (mehr KH)",
         type: "note",
         duration: null,
         target: null,
         details: [
-          "Kein festes Rezept – Partnerin kocht, Fokus auf mehr Kohlenhydrate"
+          "Kein festes Rezept hinterlegt – Fokus auf mehr Kohlenhydrate"
         ]
       }
     ]
@@ -168,12 +168,12 @@ const nutritionWeek = [
       },
       {
         time: "Abend",
-        title: "Frau kocht (proteinreich)",
+        title: "Familienessen (proteinreich)",
         type: "note",
         duration: null,
         target: null,
         details: [
-          "Kein festes Rezept – Partnerin kocht, Fokus auf Eiweiss"
+          "Kein festes Rezept hinterlegt – Fokus auf Eiweiss"
         ]
       }
     ]
@@ -215,12 +215,12 @@ const nutritionWeek = [
       },
       {
         time: "Abend",
-        title: "Frau kocht",
+        title: "Familienessen",
         type: "note",
         duration: null,
         target: null,
         details: [
-          "Kein festes Rezept – Partnerin kocht"
+          "Kein festes Rezept hinterlegt"
         ]
       }
     ]
