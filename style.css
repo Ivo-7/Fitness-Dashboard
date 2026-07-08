@@ -497,3 +497,22 @@ footer {
   text-decoration: line-through;
   opacity: 0.5;
 }
+
+/* Zusätzliche Typ-Farbe (Recovery-Wissen) */
+.session.c-pink { --session-color: #D4537E; }
+
+@media (prefers-color-scheme: dark) {
+  .session.c-pink { --session-color: #ED93B1; }
+}
+
+/* Sektions-Überschrift (z.B. "Recovery-Grundlagen") */
+.section-heading {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  margin: 24px 0 10px;
+}
+
+.section-heading:first-child { margin-top: 4px; }

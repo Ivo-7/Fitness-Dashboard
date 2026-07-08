@@ -88,8 +88,16 @@ function renderWeekBlock(weekData, prefix) {
   renderWeekList(weekData, prefix + '-week-list', prefix);
 }
 
+function renderTopics(topics, containerId) {
+  const el = document.getElementById(containerId);
+  if (!el) return;
+  el.innerHTML = topics.map(t => sessionCard(t, false)).join('');
+}
+
 renderWeekBlock(trainingWeek, 'training');
 renderWeekBlock(nutritionWeek, 'nutrition');
+renderWeekBlock(recoveryWeek, 'recovery');
+renderTopics(recoveryTopics, 'recovery-topics');
 attachSessionToggles();
 
 // Einkaufsliste rendern

@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Ivo's Fitness Dashboard</title>
-<link rel="stylesheet" href="style.css?v=1783434801">
+<link rel="stylesheet" href="style.css?v=1783501699">
 </head>
 <body>
 
@@ -83,25 +83,21 @@
 
   <!-- RECOVERY -->
   <section id="recovery" class="tab-content">
+    <div id="recovery-today-hero"></div>
+    <div class="day-strip" id="recovery-day-strip"></div>
+    <div id="recovery-week-list"></div>
 
-    <div class="day-card">
-      <h3>Mobility-Rhythmus</h3>
-      <ul>
-        <li>Montag Mittag: Hüfte, Schulter, Thorax (15min)</li>
-        <li>Mittwoch Morgen: Core statt Mobility (20-25min)</li>
-        <li>Donnerstag Abend: Beine, Hüftbeuger, Waden nach dem Lauf (15min)</li>
-        <li>Freitag Morgen: Fokus Beine/Hüfte (15min)</li>
-      </ul>
-    </div>
+    <div class="section-heading">Recovery-Grundlagen</div>
+    <div id="recovery-topics"></div>
 
+    <div class="section-heading">Supplements</div>
     <div class="day-card">
-      <h3>Supplements</h3>
-      <p><strong>Energy IsoCarb:</strong> während Sessions ≥75-90min (v.a. Dienstag 2h Ride)</p>
+      <p><strong>Energy IsoCarb:</strong> während Sessions &ge;75-90min (v.a. Dienstag 2h Ride)</p>
       <p><strong>Energy Ultra Recovery:</strong> 0-30min nach intensiven/langen Sessions</p>
     </div>
 
+    <div class="section-heading">Morgenroutine (frühe Sessions)</div>
     <div class="day-card">
-      <h3>Morgenroutine (frühe Sessions)</h3>
       <ul>
         <li>Direkt nach dem Aufwachen hydrieren</li>
         <li>20-30min warten</li>
@@ -110,8 +106,8 @@
       </ul>
     </div>
 
+    <div class="section-heading">Garmin-Werte (manuell eintragen)</div>
     <div class="day-card">
-      <h3>Garmin-Werte (manuell eintragen)</h3>
       <div class="metrics-grid">
         <div class="metric"><label>HRV</label><input type="text" data-key="hrv" placeholder="ms"></div>
         <div class="metric"><label>Body Battery</label><input type="text" data-key="bb" placeholder="0-100"></div>
@@ -120,12 +116,6 @@
       </div>
       <p class="hint">Bei tiefer HRV/Body Battery &lt;60: intensive Sessions gegen Z2 tauschen.</p>
     </div>
-
-    <div class="day-card rest">
-      <h3>Samstag</h3>
-      <p>Ruhetag. Aktive Erholung, Spazieren.</p>
-    </div>
-
   </section>
 
 </main>
@@ -134,9 +124,10 @@
   <p>Zuletzt aktualisiert von Claude</p>
 </footer>
 
-<script src="icons.js?v=1783434801"></script>
-<script src="training-data.js?v=1783434801"></script>
-<script src="nutrition-data.js?v=1783434801"></script>
-<script src="script.js?v=1783434801"></script>
+<script src="icons.js?v=1783501699"></script>
+<script src="training-data.js?v=1783501699"></script>
+<script src="nutrition-data.js?v=1783501699"></script>
+<script src="recovery-data.js?v=1783501699"></script>
+<script src="script.js?v=1783501699"></script>
 </body>
 </html>

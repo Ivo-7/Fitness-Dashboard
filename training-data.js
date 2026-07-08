@@ -220,5 +220,11 @@ const typeConfig = {
   lunch:      { label: "Mittag", color: "green" },
   snack:      { label: "Snack", color: "purple" },
   supplement: { label: "Supplement", color: "coral" },
-  note:       { label: "Hinweis", color: "gray" }
+  note:       { label: "Hinweis", color: "gray" },
+  info:       { label: "Wissen", color: "pink" },
+  sleep:        { label: "Schlaf", color: "blue" },
+  readiness:    { label: "Readiness", color: "teal" },
+  load:         { label: "Belastung", color: "pink" },
+  runbuildup:   { label: "Lauf-Aufbau", color: "green" },
+  nutritiontiming: { label: "Ernährung", color: "amber" }
 };
