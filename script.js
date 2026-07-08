@@ -141,14 +141,3 @@ document.querySelectorAll('[data-key]').forEach(el => {
     localStorage.setItem(key, el.classList.contains('done'));
   });
 });
-
-// Garmin-Werte Inputs speichern/laden
-document.querySelectorAll('input[data-key]').forEach(input => {
-  const key = 'value-' + input.dataset.key;
-  const saved = localStorage.getItem(key);
-  if (saved) input.value = saved;
-
-  input.addEventListener('input', () => {
-    localStorage.setItem(key, input.value);
-  });
-});

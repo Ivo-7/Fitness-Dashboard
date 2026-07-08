@@ -104,7 +104,7 @@ const recoveryWeek = [
         duration: null,
         target: null,
         details: [
-          "Vor der Session HRV und Body Battery checken (unten eintragen)",
+          "Vor der Session HRV und Body Battery in Garmin Connect checken",
           "Bei HRV oder Body Battery unter 60: Intervalle gegen Pettit (Z2) tauschen",
           "VO2max-Intervalle sind intensiv – danach besonders auf Regeneration achten"
         ]
