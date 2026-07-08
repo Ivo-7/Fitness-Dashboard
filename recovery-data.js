@@ -138,7 +138,11 @@ const supplementRoutine = [
     type: "supplement",
     duration: null,
     target: null,
-    details: []
+    details: [
+      "D3: unterstützt Knochen, Immunsystem und Muskelfunktion",
+      "K2: lenkt Kalzium gezielt in Knochen statt in Gefässe – sinnvolle Ergänzung zu D3",
+      "Gerade im Winter/bei wenig Sonne relevant für den Vitamin-D-Spiegel"
+    ]
   },
   {
     time: "Nach dem Mittagessen",
@@ -146,7 +150,10 @@ const supplementRoutine = [
     type: "supplement",
     duration: null,
     target: null,
-    details: []
+    details: [
+      "Multivitamin: deckt Mikronährstofflücken ab, die bei hohem Trainingsvolumen leichter entstehen",
+      "Omega 3: entzündungshemmend, unterstützt Herz-Kreislauf-Gesundheit und die Regeneration der Gelenke"
+    ]
   },
   {
     time: "Nachmittag",
@@ -154,7 +161,11 @@ const supplementRoutine = [
     type: "supplement",
     duration: null,
     target: null,
-    details: []
+    details: [
+      "Protein: liefert Baustoff für Muskelreparatur und -aufbau nach Kraft- und Ausdauerreizen",
+      "Kreatin: unterstützt Kraft und Leistung bei kurzen, intensiven Belastungen (z.B. Zwift-Intervalle, Krafttraining)",
+      "Kreatin wirkt am besten bei täglicher, konstanter Einnahme statt nur an Trainingstagen"
+    ]
   },
   {
     time: "Abend (vor dem Schlafen)",
@@ -163,6 +174,9 @@ const supplementRoutine = [
     duration: null,
     target: "Ashwagandha nur Mo-Do",
     details: [
+      "Magnesium: unterstützt Muskelentspannung, kann Krämpfen vorbeugen und die Schlafqualität verbessern",
+      "Zink: wichtig für Immunsystem, Proteinsynthese und Hormonhaushalt, oft erhöhter Bedarf bei intensivem Training",
+      "Ashwagandha: Adaptogen, kann helfen Stresslevel/Cortisol zu senken und die Erholung zu unterstützen",
       "Freitag und Samstag: Ashwagandha aussetzen",
       "Magnesium und Zink an allen Tagen wie gewohnt"
     ]
