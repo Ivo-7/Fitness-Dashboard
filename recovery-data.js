@@ -131,6 +131,44 @@ const recoveryWeek = [
   }
 ];
 
+const supplementRoutine = [
+  {
+    time: "Morgen (nach dem Aufstehen)",
+    title: "Vitamin D3 & K2",
+    type: "supplement",
+    duration: null,
+    target: null,
+    details: []
+  },
+  {
+    time: "Nach dem Mittagessen",
+    title: "Essential Multivitamin (Prozis) & Omega 3",
+    type: "supplement",
+    duration: null,
+    target: null,
+    details: []
+  },
+  {
+    time: "Nachmittag",
+    title: "Protein Shake mit Kreatin",
+    type: "supplement",
+    duration: null,
+    target: null,
+    details: []
+  },
+  {
+    time: "Abend (vor dem Schlafen)",
+    title: "Magnesium Bisglycinate, Zink & Ashwagandha Extrakt",
+    type: "supplement",
+    duration: null,
+    target: "Ashwagandha nur Mo-Do",
+    details: [
+      "Freitag und Samstag: Ashwagandha aussetzen",
+      "Magnesium und Zink an allen Tagen wie gewohnt"
+    ]
+  }
+];
+
 const recoveryTopics = [
   {
     time: "Wissen",

@@ -98,6 +98,7 @@ renderWeekBlock(trainingWeek, 'training');
 renderWeekBlock(nutritionWeek, 'nutrition');
 renderWeekBlock(recoveryWeek, 'recovery');
 renderTopics(recoveryTopics, 'recovery-topics');
+renderTopics(supplementRoutine, 'recovery-supplements');
 attachSessionToggles();
 
 // Einkaufsliste rendern
